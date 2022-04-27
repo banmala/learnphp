@@ -31,7 +31,7 @@
 				CREATE TABLE IF NOT EXISTS products
 					(
 						id int not null AUTO_INCREMENT PRIMARY KEY,
-						product varchar(30),
+						productname varchar(30),
 						description text,
 						stock int,
 						status enum('Active','Passive') default 'Active',

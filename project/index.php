@@ -1,11 +1,19 @@
 <?php
     include  $_SERVER['DOCUMENT_ROOT'].'/learn/project/config/init.php';
     // redirect('cms/index.php');
-    
-    $user = new user();
+    // echo "Here";
+    // $user = new user();
+    // $data = array(
+    //     'username'=>'banmala',
+    //     'email'=>'banmala@gmail.com',
+    //     'role'=>'Admin'
+    // );
+    // $user->addUser($data,false);
+
+    $product = new product();
     $data = array(
-        'username'=>'banmala',
-        'email'=>'banmala@gmail.com',
-        'role'=>'Admin'
+        'productname'=>'cocacola',
+        'description'=>'black colored carbon water with flavour of sweet.',
+        'stock'=>'100',
     );
-    $user->addUser($data,true);
+    $product->addProduct($data,false);

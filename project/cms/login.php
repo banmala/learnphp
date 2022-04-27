@@ -1,3 +1,4 @@
+<?php include  $_SERVER['DOCUMENT_ROOT'].'/learn/project/config/init.php';?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,8 +8,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gentelella Alela! | </title>
+    <title>Vending Machine | Login</title>
 
+    <!-- Custom Theme Style -->
+    <link href="assets/css/custom.min.css" rel="stylesheet">
+    
     <!-- Bootstrap -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -18,9 +22,8 @@
 
     <!-- Animate.css -->
     <link href="assets/css/animate.min.css" rel="stylesheet">
-
-    <!-- Custom Theme Style -->
-    <link href="assets/css/custom.min.css" rel="stylesheet">
+    <script src="assets/js/jquery.min.js"></script>
+    
   </head>
 
   <body class="login">
@@ -31,16 +34,17 @@
       <div class="login_wrapper">
         <div class="animate form login_form">
           <section class="login_content">
-            <form>
+            <?php flashMessage(); ?>
+            <form method="POST" action="process/login">
               <h1>Login Form</h1>
               <div>
-                <input type="text" class="form-control" placeholder="Username" required="" />
+                <input type="text" class="form-control" placeholder="Email" name="email" required="" />
               </div>
               <div>
-                <input type="password" class="form-control" placeholder="Password" required="" />
+                <input type="password" class="form-control" placeholder="Password" name="password" required="" />
               </div>
               <div>
-                <a class="btn btn-default submit" href="index.html">Log in</a>
+                <button class="btn btn-default submit">Log in</button>
                 <a class="reset_pass" href="#">Lost your password?</a>
               </div>
 

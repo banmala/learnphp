@@ -7,7 +7,7 @@
 		}
 
 		public function addUser($data=array(),$is_die=false){
-			debugger($data,true);
+			// debugger($data,true);
 			return $this->addData($data,$is_die);
 		}
 

@@ -41,7 +41,7 @@
 		}
 
 		protected function addData($data,$is_die=false){
-			debugger($data,true);
+			// debugger($data,true);
 			// INSERT INTO TABLE SET 
 			// 	columnname = :columnname,
 			// 	columnname = :columnname,
