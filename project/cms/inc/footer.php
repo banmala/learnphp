@@ -16,7 +16,7 @@
     <!-- FastClick -->
     <script src="assets/js/fastclick.js"></script>
     <!-- NProgress -->
-    <script src="assets/js/nprogress.js"></script>
+    <script src="assets/nprogress/nprogress.js"></script>
     
     <!-- Custom Theme Scripts -->
     <script src="assets/js/custom.min.js"></script>

@@ -34,6 +34,7 @@
 						productname varchar(30),
 						description text,
 						stock int,
+						rate int,
 						status enum('Active','Passive') default 'Active',
 						added_by int,
 						created_date datetime default current_timestamp,

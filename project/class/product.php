@@ -25,7 +25,7 @@
 
 		public function getProduct($is_die=false){
 			$args = array(
-				'fields' => "productname,description,stock,status",
+				'fields' => "id,productname,description,stock,status,rate",
 				'where' => array(
 						'or' => array(
 							'status'=>'Active',
